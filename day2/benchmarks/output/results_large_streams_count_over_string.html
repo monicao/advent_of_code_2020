@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+  <span class="input-label">
+    Large
+  </span>
+
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.11.2</li>
+    <li>Erlang: 23.1.4</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz</li>
+    <li>Number of Available Cores: 12</li>
+  </ul>
+</article>
+
+
+    
+      <article>
+        <h2>
+          <a name="run_time" href="#run_time">streams_count_over_string Run Time</a>
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+            <i
+              class="benchee-help-icon icon-question-circle-o"
+              title="Graphs showing the individual run time distribution for streams_count_over_string.
+  Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+  Raw Run Times shows all individual recorded run times in the order they were recorded in."
+            ></i>
+          </a>
+        </h2>
+
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+        <th>Iterations per Second</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left">streams_count_over_string</td>
+        
+        
+          <td>74.58</td>
+          <td>13.41 ms</td>
+          <td>±3.91%</td>
+          <td>13.38 ms</td>
+          <td>13.42 ms, 13.62 ms</td>
+          <td>12.15 ms</td>
+          <td>16.46 ms</td>
+        
+        <td>373</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        <section class="benchee-plot-container">
+          <div id="run-times-histogram" class="plot"></div>
+        </section>
+        <section class="benchee-plot-container">
+          <div id="raw-run-times" class="plot"></div>
+        </section>
+      </article>
+    
+
+    
+      <article>
+        <h2>
+          <a name="memory" href="#memory">streams_count_over_string Memory</a>
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+            <i
+              class="benchee-help-icon icon-question-circle-o"
+              title="Graphs showing the individual memory usage distribution for streams_count_over_string.
+  Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+  Raw Run Times shows all individual recorded run times in the order they were recorded in."
+            ></i>
+          </a>
+        </h2>
+
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left">streams_count_over_string</td>
+        
+        
+          <td>3.22 MB</td>
+          <td>±0.00%</td>
+          <td>3.22 MB</td>
+          <td>3.22 MB</td>
+          <td>3.22 MB</td>
+          <td>3.22 MB</td>
+        
+        <td>139</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        
+      </article>
+    
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 1.0.1 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 1.0.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var scenario = {"name":"streams_count_over_string","job_name":"streams_count_over_string","input_name":"Large","run_time_data":{"statistics":{"absolute_difference":5991458.230244788,"average":13408710.455764076,"ips":74.57838718339426,"maximum":1.6462e7,"median":1.3381e7,"minimum":1.2154e7,"mode":[1.3416e7,1.3615e7],"percentiles":{"50":1.3381e7,"99":14694020.0},"relative_less":0.5531667083116701,"relative_more":1.8077732896329168,"sample_size":373,"std_dev":523759.5040563064,"std_dev_ips":2.9131167544677905,"std_dev_ratio":0.03906113908449377},"samples":[1.2795e7,1.2465e7,1.2516e7,1.2814e7,1.2737e7,1.275e7,1.2154e7,1.2897e7,1.2553e7,1.2655e7,1.2202e7,1.2544e7,1.2715e7,1.3117e7,1.2551e7,1.2627e7,1.2783e7,1.2778e7,1.2529e7,1.2646e7,1.293e7,1.2592e7,1.2701e7,1.2677e7,1.2828e7,1.2711e7,1.2709e7,1.2649e7,1.2878e7,1.2925e7,1.2678e7,1.253e7,1.2811e7,1.2629e7,1.2758e7,1.2648e7,1.2627e7,1.2697e7,1.2625e7,1.2301e7,1.2813e7,1.2866e7,1.2921e7,1.2591e7,1.2545e7,1.2813e7,1.2855e7,1.2882e7,1.2538e7,1.2777e7,1.2721e7,1.2791e7,1.2823e7,1.3601e7,1.3265e7,1.304e7,1.2994e7,1.286e7,1.2977e7,1.2824e7,1.2855e7,1.2791e7,1.2994e7,1.3093e7,1.3142e7,1.292e7,1.2843e7,1.312e7,1.3164e7,1.2996e7,1.2829e7,1.2956e7,1.305e7,1.3171e7,1.3148e7,1.2663e7,1.2835e7,1.2982e7,1.2976e7,1.2875e7,1.2937e7,1.2979e7,1.2962e7,1.3383e7,1.2548e7,1.2939e7,1.2983e7,1.4552e7,1.6462e7,1.2941e7,1.3082e7,1.3103e7,1.3167e7,1.3076e7,1.3202e7,1.3038e7,1.3001e7,1.3135e7,1.2933e7,1.2686e7,1.3106e7,1.3193e7,1.3092e7,1.3211e7,1.2878e7,1.3198e7,1.317e7,1.3277e7,1.2978e7,1.3344e7,1.3342e7,1.3309e7,1.3155e7,1.3065e7,1.3329e7,1.3064e7,1.3081e7,1.325e7,1.3012e7,1.3224e7,1.338e7,1.3346e7,1.3351e7,1.308e7,1.318e7,1.3411e7,1.3188e7,1.3371e7,1.2998e7,1.3342e7,1.3194e7,1.3405e7,1.3122e7,1.3306e7,1.3294e7,1.3182e7,1.3141e7,1.2824e7,1.3104e7,1.3226e7,1.32e7,1.3054e7,1.2976e7,1.3451e7,1.3276e7,1.3316e7,1.34e7,1.3203e7,1.3104e7,1.3403e7,1.3272e7,1.2908e7,1.2848e7,1.3162e7,1.3453e7,1.3054e7,1.2918e7,1.3223e7,1.3627e7,1.3463e7,1.3498e7,1.3488e7,1.3394e7,1.3392e7,1.346e7,1.3419e7,1.3383e7,1.3124e7,1.3408e7,1.3452e7,1.3395e7,1.3321e7,1.3226e7,1.321e7,1.3223e7,1.3391e7,1.3206e7,1.3168e7,1.3227e7,1.3397e7,1.357e7,1.344e7,1.3129e7,1.3332e7,1.3359e7,1.3423e7,1.3357e7,1.3419e7,1.3287e7,1.3405e7,1.3574e7,1.352e7,1.3068e7,1.3221e7,1.3482e7,1.3304e7,1.3234e7,1.3038e7,1.3474e7,1.3381e7,1.343e7,1.3476e7,1.3333e7,1.3678e7,1.3675e7,1.346e7,1.3558e7,1.3285e7,1.3514e7,1.3637e7,1.3463e7,1.3674e7,1.3101e7,1.3384e7,1.3762e7,1.3258e7,1.3302e7,1.3161e7,1.3376e7,1.3268e7,1.3725e7,1.3416e7,1.3114e7,1.336e7,1.3529e7,1.3516e7,1.3478e7,1.3373e7,1.3225e7,1.3433e7,1.3375e7,1.3414e7,1.3457e7,1.3175e7,1.3471e7,1.3626e7,1.3393e7,1.3481e7,1.3537e7,1.3496e7,1.3837e7,1.376e7,1.3483e7,1.3095e7,1.3615e7,1.3469e7,1.3391e7,1.3726e7,1.345e7,1.3416e7,1.3566e7,1.3767e7,1.3536e7,1.3554e7,1.3258e7,1.3909e7,1.364e7,1.3649e7,1.4092e7,1.3615e7,1.3622e7,1.3893e7,1.3657e7,1.3684e7,1.3769e7,1.3228e7,1.3615e7,1.3678e7,1.3601e7,1.3503e7,1.3166e7,1.3416e7,1.3454e7,1.3895e7,1.4681e7,1.3685e7,1.3255e7,1.3666e7,1.371e7,1.3936e7,1.364e7,1.3544e7,1.318e7,1.3555e7,1.3819e7,1.365e7,1.3511e7,1.3611e7,1.401e7,1.374e7,1.3607e7,1.381e7,1.3935e7,1.3659e7,1.3881e7,1.3866e7,1.485e7,1.3938e7,1.4049e7,1.3682e7,1.3771e7,1.3896e7,1.408e7,1.3795e7,1.4025e7,1.368e7,1.3789e7,1.4307e7,1.3943e7,1.4019e7,1.4411e7,1.4165e7,1.3994e7,1.4153e7,1.4512e7,1.4155e7,1.4173e7,1.4141e7,1.3855e7,1.4184e7,1.4068e7,1.3908e7,1.386e7,1.4193e7,1.386e7,1.4003e7,1.392e7,1.4169e7,1.4153e7,1.3951e7,1.3919e7,1.3445e7,1.3907e7,1.4132e7,1.3987e7,1.4229e7,1.3904e7,1.3883e7,1.4015e7,1.3951e7,1.3899e7,1.4172e7,1.43e7,1.3825e7,1.3907e7,1.4714e7,1.4284e7,1.4163e7,1.4344e7,1.4436e7,1.4191e7,1.4157e7,1.4118e7,1.4138e7,1.4052e7,1.4116e7,1.4156e7,1.38e7,1.411e7,1.4285e7,1.4091e7,1.4259e7,1.4282e7,1.4211e7,1.4021e7,1.4248e7,1.4221e7,1.4149e7,1.418e7,1.4286e7,1.4402e7,1.4298e7,1.4687e7]},"memory_usage_data":{"statistics":{"absolute_difference":-312824.0,"average":3372216.0,"ips":null,"maximum":3372216,"median":3372216.0,"minimum":3372216,"mode":3372216,"percentiles":{"50":3372216.0,"99":3372216.0},"relative_less":1.0927651135039986,"relative_more":0.9151097410068819,"sample_size":139,"std_dev":0.0,"std_dev_ips":null,"std_dev_ratio":0.0},"samples":[3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216,3372216]},"tag":null};
+
+      var inputHeadline = " (Large)"
+
+      
+        drawRunTimeHistogram(scenario, inputHeadline);
+        drawRawRunTimeChart(scenario, inputHeadline);
+      
+
+      
+        if (scenario.memory_usage_data.statistics.std_dev !== 0) {
+          drawMemoryHistogram(scenario, inputHeadline);
+          drawRawMemoryChart(scenario, inputHeadline);
+        };
+      
+    </script>
+  </body>
+</html>

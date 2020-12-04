@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+  <span class="input-label">
+    Large
+  </span>
+
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.11.2</li>
+    <li>Erlang: 23.1.4</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz</li>
+    <li>Number of Available Cores: 12</li>
+  </ul>
+</article>
+
+
+    
+      <article>
+        <h2>
+          <a name="run_time" href="#run_time">enum Run Time</a>
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+            <i
+              class="benchee-help-icon icon-question-circle-o"
+              title="Graphs showing the individual run time distribution for enum.
+  Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+  Raw Run Times shows all individual recorded run times in the order they were recorded in."
+            ></i>
+          </a>
+        </h2>
+
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+        <th>Iterations per Second</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left">enum</td>
+        
+        
+          <td>134.82</td>
+          <td>7.42 ms</td>
+          <td>±3.77%</td>
+          <td>7.39 ms</td>
+          <td>7.31 ms</td>
+          <td>7.01 ms</td>
+          <td>10.44 ms</td>
+        
+        <td>674</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        <section class="benchee-plot-container">
+          <div id="run-times-histogram" class="plot"></div>
+        </section>
+        <section class="benchee-plot-container">
+          <div id="raw-run-times" class="plot"></div>
+        </section>
+      </article>
+    
+
+    
+      <article>
+        <h2>
+          <a name="memory" href="#memory">enum Memory</a>
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+            <i
+              class="benchee-help-icon icon-question-circle-o"
+              title="Graphs showing the individual memory usage distribution for enum.
+  Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+  Raw Run Times shows all individual recorded run times in the order they were recorded in."
+            ></i>
+          </a>
+        </h2>
+
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left">enum</td>
+        
+        
+          <td>3.51 MB</td>
+          <td>±0.00%</td>
+          <td>3.51 MB</td>
+          <td>3.51 MB</td>
+          <td>3.51 MB</td>
+          <td>3.51 MB</td>
+        
+        <td>237</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        
+      </article>
+    
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 1.0.1 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 1.0.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var scenario = {"name":"enum","job_name":"enum","input_name":"Large","run_time_data":{"statistics":{"absolute_difference":null,"average":7417252.225519287,"ips":134.82081633404198,"maximum":1.0443e7,"median":7.3885e6,"minimum":7.008e6,"mode":7.314e6,"percentiles":{"50":7.3885e6,"99":8.5555e6},"relative_less":null,"relative_more":null,"sample_size":674,"std_dev":279549.7045748354,"std_dev_ips":5.081277841280494,"std_dev_ratio":0.037689119376719586},"samples":[7.504e6,7.025e6,7.015e6,7.302e6,7.048e6,7.341e6,7.068e6,7.436e6,7.085e6,7.069e6,7.31e6,7.059e6,7.364e6,7.032e6,7.34e6,7.068e6,7.026e6,7.315e6,7.105e6,7.406e6,7.028e6,7.32e6,7.059e6,7.008e6,7.31e6,7.13e6,7.271e6,7.012e6,7.364e6,7.046e6,7.057e6,7.367e6,7.01e6,7.451e6,7.086e6,7.296e6,7.02e6,7.051e6,7.385e6,7.24e6,7.518e6,7.338e6,7.514e6,7.241e6,7.492e6,7.249e6,7.24e6,7.347e6,7.183e6,7.57e6,7.208e6,7.457e6,7.184e6,7.2e6,7.423e6,7.228e6,7.493e6,7.194e6,7.503e6,7.222e6,7.529e6,7.204e6,7.226e6,7.401e6,7.255e6,7.513e6,7.228e6,7.507e6,7.087e6,7.363e6,7.092e6,7.037e6,7.341e6,7.02e6,7.407e6,7.202e6,7.357e6,7.066e6,7.041e6,7.535e6,7.105e6,7.407e6,7.174e6,7.49e6,7.23e6,7.703e6,7.458e6,7.286e6,7.55e6,7.292e6,7.397e6,7.263e6,7.398e6,7.208e6,7.333e6,7.544e6,7.234e6,7.371e6,7.25e6,7.479e6,7.667e6,7.423e6,7.381e6,7.474e6,7.225e6,7.224e6,7.573e6,7.279e6,7.432e6,7.212e6,7.513e6,7.234e6,7.2e6,7.646e6,7.517e6,7.524e6,7.22e6,7.488e6,7.256e6,7.512e6,7.205e6,7.286e6,7.448e6,7.199e6,7.453e6,7.279e6,7.687e6,7.292e6,7.416e6,7.223e6,7.179e6,7.615e6,7.264e6,7.626e6,7.219e6,7.429e6,7.264e6,7.465e6,7.232e6,7.248e6,7.593e6,7.227e6,7.549e6,7.297e6,7.582e6,7.24e6,7.271e6,7.475e6,7.339e6,7.395e6,7.109e6,7.536e6,7.073e6,7.398e6,7.087e6,7.176e6,7.377e6,7.183e6,7.473e6,7.15e6,7.343e6,7.146e6,7.068e6,7.488e6,7.161e6,7.24e6,7.101e6,7.416e6,7.038e6,7.287e6,7.18e6,7.063e6,7.346e6,7.053e6,7.38e6,7.087e6,7.434e6,7.054e6,7.109e6,7.358e6,7.075e6,7.37e6,7.121e6,7.739e6,7.067e6,7.239e6,7.421e6,7.171e6,7.346e6,7.231e6,7.391e6,7.213e6,7.368e6,7.236e6,7.185e6,7.596e6,7.267e6,7.501e6,7.494e6,7.474e6,7.276e6,7.494e6,7.264e6,7.251e6,7.589e6,7.289e6,7.574e6,7.249e6,7.512e6,7.287e6,7.578e6,7.268e6,7.314e6,7.619e6,7.255e6,7.488e6,7.298e6,7.501e6,7.215e6,7.136e6,7.446e6,7.238e6,7.382e6,7.151e6,7.405e6,7.08e6,7.434e6,7.149e6,7.075e6,7.435e6,7.204e6,7.62e6,7.219e6,7.444e6,7.24e6,7.501e6,7.272e6,7.303e6,7.472e6,7.262e6,7.458e6,7.273e6,7.499e6,7.283e6,7.414e6,7.413e6,7.168e6,7.472e6,7.112e6,7.461e6,7.129e6,7.724e6,7.115e6,7.223e6,9.247e6,8.667e6,9.503e6,8.238e6,7.744e6,7.801e6,7.453e6,7.522e6,8.189e6,7.462e6,7.828e6,7.556e6,7.634e6,7.478e6,7.586e6,7.632e6,7.601e6,7.445e6,7.455e6,7.629e6,7.425e6,7.689e6,7.443e6,7.649e6,7.409e6,7.544e6,7.468e6,7.581e6,7.486e6,7.437e6,7.425e6,7.096e6,7.388e6,7.103e6,7.446e6,7.116e6,7.188e6,7.566e6,7.186e6,7.281e6,7.136e6,7.372e6,7.233e6,7.616e6,7.129e6,7.193e6,7.409e6,7.054e6,7.452e6,7.176e6,7.386e6,7.093e6,7.189e6,7.48e6,7.094e6,7.36e6,7.091e6,7.386e6,7.091e6,7.129e6,7.406e6,7.151e6,7.441e6,7.522e6,8.056e6,7.142e6,7.621e6,7.13e6,7.463e6,7.221e6,7.095e6,7.424e6,7.293e6,7.492e6,7.271e6,7.517e6,7.333e6,7.303e6,7.491e6,8.215e6,7.562e6,7.308e6,7.561e6,7.333e6,7.656e6,7.352e6,7.581e6,7.35e6,7.302e6,7.578e6,7.37e6,7.602e6,7.284e6,7.626e6,7.301e6,7.587e6,7.293e6,7.257e6,7.507e6,7.201e6,7.364e6,7.291e6,7.463e6,7.215e6,7.36e6,7.171e6,7.17e6,7.501e6,7.124e6,7.5e6,7.189e6,7.485e6,7.224e6,7.232e6,7.481e6,7.169e6,7.399e6,7.129e6,7.4e6,7.166e6,7.386e6,7.208e6,7.144e6,7.611e6,7.242e6,7.502e6,7.189e6,7.393e6,7.148e6,7.462e6,7.256e6,7.747e6,7.519e6,7.185e6,7.539e6,7.31e6,7.555e6,7.234e6,7.32e6,7.247e6,7.533e6,7.561e6,7.416e6,7.428e6,7.488e6,7.554e6,7.318e6,7.568e6,7.593e6,7.311e6,7.737e6,7.483e6,7.74e6,7.325e6,7.587e6,7.32e6,7.739e6,7.314e6,7.383e6,7.76e6,7.388e6,7.661e6,7.319e6,7.617e6,7.313e6,7.604e6,7.314e6,7.606e6,7.318e6,7.575e6,7.628e6,7.345e6,7.705e6,7.451e6,7.625e6,7.514e6,7.626e6,7.389e6,7.386e6,7.602e6,7.309e6,7.647e6,7.446e6,7.663e6,7.361e6,7.598e6,7.372e6,7.645e6,7.339e6,7.346e6,7.615e6,7.353e6,7.541e6,7.154e6,7.583e6,7.193e6,7.5e6,7.186e6,7.423e6,7.439e6,7.322e6,7.51e6,7.161e6,7.583e6,7.302e6,7.594e6,7.428e6,7.345e6,7.613e6,7.37e6,7.635e6,7.382e6,7.702e6,7.398e6,7.68e6,7.315e6,7.343e6,7.6e6,7.332e6,7.491e6,7.23e6,7.446e6,7.195e6,7.455e6,7.217e6,7.221e6,7.458e6,7.241e6,7.511e6,7.199e6,7.495e6,7.405e6,7.496e6,7.249e6,7.27e6,7.571e6,7.285e6,7.7e6,7.16e6,7.603e6,7.201e6,7.513e6,7.196e6,7.249e6,7.454e6,7.222e6,7.466e6,7.225e6,7.645e6,7.23e6,7.522e6,7.179e6,7.242e6,7.407e6,7.191e6,7.359e6,7.172e6,7.547e6,7.312e6,7.229e6,7.43e6,7.234e6,7.575e6,7.355e6,7.54e6,7.18e6,8.027e6,7.227e6,7.313e6,7.465e6,7.408e6,7.475e6,7.201e6,7.796e6,7.521e6,7.668e6,7.653e6,7.639e6,7.392e6,7.412e6,7.696e6,7.472e6,7.628e6,7.399e6,7.656e6,7.419e6,7.634e6,7.317e6,7.336e6,7.526e6,7.213e6,7.5e6,7.364e6,7.505e6,7.244e6,7.522e6,7.314e6,7.629e6,7.227e6,7.218e6,7.464e6,7.202e6,7.549e6,7.284e6,7.578e6,7.3e6,7.508e6,7.619e6,7.327e6,8.969e6,7.574e6,7.602e6,7.317e6,8.182e6,7.578e6,7.869e6,7.701e6,7.837e6,7.648e6,7.832e6,7.592e6,7.546e6,7.91e6,7.723e6,7.805e6,7.644e6,7.684e6,7.337e6,7.512e6,7.3e6,7.441e6,7.317e6,7.548e6,7.841e6,7.314e6,7.511e6,7.21e6,7.595e6,7.358e6,7.601e6,7.476e6,7.463e6,7.785e6,7.494e6,7.77e6,7.487e6,7.763e6,7.584e6,7.757e6,7.493e6,7.658e6,7.445e6,7.669e6,7.517e6,7.457e6,7.776e6,7.379e6,7.806e6,7.439e6,7.633e6,7.391e6,7.781e6,7.453e6,7.736e6,7.47e6,7.446e6,7.591e6,7.333e6,7.529e6,7.292e6,7.634e6,7.318e6,7.684e6,7.277e6,7.246e6,7.564e6,7.351e6,7.538e6,7.302e6,7.607e6,7.344e6,7.707e6,7.287e6,7.32e6,7.531e6,7.347e6,7.602e6,7.381e6,7.65e6,7.324e6,7.578e6,7.338e6,7.316e6,7.629e6,7.378e6,7.644e6,7.314e6,7.55e6,7.238e6,7.919e6,7.266e6,7.646e6,7.298e6,7.333e6,7.56e6,7.269e6,7.695e6,7.486e6,7.725e6,7.457e6,7.8e6,7.55e6,7.732e6,8.327e6,1.0443e7,8.653e6,8.523e6,7.882e6,7.997e6,7.947e6]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":3685040.0,"ips":null,"maximum":3685040,"median":3685040.0,"minimum":3685040,"mode":3685040,"percentiles":{"50":3685040.0,"99":3685040.0},"relative_less":null,"relative_more":null,"sample_size":237,"std_dev":0.0,"std_dev_ips":null,"std_dev_ratio":0.0},"samples":[3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040,3685040]},"tag":null};
+
+      var inputHeadline = " (Large)"
+
+      
+        drawRunTimeHistogram(scenario, inputHeadline);
+        drawRawRunTimeChart(scenario, inputHeadline);
+      
+
+      
+        if (scenario.memory_usage_data.statistics.std_dev !== 0) {
+          drawMemoryHistogram(scenario, inputHeadline);
+          drawRawMemoryChart(scenario, inputHeadline);
+        };
+      
+    </script>
+  </body>
+</html>
