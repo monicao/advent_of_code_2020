@@ -19,5 +19,21 @@ defmodule Mix.Tasks.Benchmark do
       },
       memory_time: 2
     )
+
+    IO.puts "----------"
+    IO.puts "Part 2"
+    IO.puts "----------"
+
+    Benchee.run(
+      %{
+        "comprehensions_efficient(?)" => fn input -> Part2.find_product(input) end,
+        "comprehensions" => fn input -> Part2.find_product_comprehensions(input) end,
+      },
+      inputs: %{
+        "Small" => [1721, 979, 366, 299, 675, 1456],
+        "Large" => large_input,
+      },
+      memory_time: 2
+    )
   end
 end
