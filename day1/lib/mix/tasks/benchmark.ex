@@ -11,6 +11,7 @@ defmodule Mix.Tasks.Benchmark do
       %{
         "reduce_while" => fn input -> Day1.find_product(input) end,
         "find_find" => fn input -> Day1.find_product_naive(input) end,
+        "comprehensions" => fn input -> Day1.find_product_comprehensions(input) end,
       },
       inputs: %{
         "Small" => [1721, 979, 366, 299, 675, 1456],

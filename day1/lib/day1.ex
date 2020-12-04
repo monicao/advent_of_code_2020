@@ -38,4 +38,15 @@ defmodule Day1 do
       end).()
   end
 
+  @doc """
+  Find the product of the two numbers in the input that add up to 2020.
+  This uses the elegant list comprehensions solution written by adamu.
+  https://elixirforum.com/t/advent-of-code-2020-day-1/35917/3
+  Added it here to see the benchmark results.
+  """
+  def find_product_comprehensions(numbers) do
+    [{a, b} | _] = for i <- numbers, j <- numbers, i + j == 2020, do: {i, j}
+    {:ok, a * b}
+  end
+
 end

@@ -13,6 +13,7 @@ defmodule Day1Test do
     ]
     assert Day1.find_product(input) == {:ok, 514579}
     assert Day1.find_product_naive(input) == {:ok, 514579}
+    assert Day1.find_product_comprehensions(input) == {:ok, 514579}
   end
 
   test "find correct product for long list" do
